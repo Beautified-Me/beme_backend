@@ -1,0 +1,87 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {
+    "no-unused-expression": true
+  },
+  "rules": {
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "class-name": false,
+    "curly": [true, "ignore-same-line"],
+    "import-spacing": false,
+    "interface-name": [true, "never-prefix"],
+    "max-classes-per-file": false,
+    "member-access": [true, "no-public"],
+    "no-consecutive-blank-lines": [true, 2],
+    "no-console": [false],
+    "no-shadowed-variable": [
+      false,
+      {
+        "class": true,
+        "enum": true,
+        "function": true,
+        "import": false,
+        "interface": false,
+        "namespace": true,
+        "typeAlias": false,
+        "typeParameter": false
+      }
+    ],
+    "no-trailing-whitespace": true,
+    "object-literal-sort-keys": false,
+    "one-line": [
+      true,
+      "check-open-brace"
+    ],
+    "one-variable-per-declaration": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "lowercase-last"
+      }
+    ],
+    "max-line-length": [true, 300],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-instance-field",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-instance-field",
+          "public-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ],
+        "alphabetize": true
+      }
+    ],
+    "no-string-literal": false,
+    "no-var-requires": false,
+    "quotemark": [true, "single"],
+    "radix": false,
+    "semicolon": [true, "never"],
+    "space-before-function-paren": [true, "always"],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "arrays": "never",
+          "functions": "never",
+          "objects": "never"
+        }
+      }
+    ],
+    "triple-equals": false,
+    "variable-name": [true, "ban-keywords"],
+    "whitespace": [
+      true, "check-branch", "check-module", "check-rest-spread", "check-separator",
+      "check-type", "check-typecast", "check-type-operator"
+    ]
+  },
+  "rulesDirectory": []
+}
