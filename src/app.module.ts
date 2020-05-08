@@ -15,7 +15,8 @@ import { MulterModule } from '@nestjs/platform-express';
     TypeOrmModule.forRootAsync({
       useFactory: () => ({
         type: 'mysql',
-        host: '34.87.25.3',
+        //host: '34.87.25.3',
+        host: '35.240.188.91',
         port: 3306,
         username: 'root',
         password: 'utician1234',
@@ -28,7 +29,7 @@ import { MulterModule } from '@nestjs/platform-express';
         port: 587,
         secure: false,
         auth: {
-          user: 'testdeveloperarvin@gmail.com',
+          user: 'testdeveloper@gmail.com',
           pass: 'Papli%4115!Test1234!'
         }
       }
