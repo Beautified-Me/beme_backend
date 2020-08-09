@@ -16,7 +16,7 @@ import { MulterModule } from '@nestjs/platform-express';
       useFactory: () => ({
         type: 'mysql',
         //host: '34.87.25.3',
-        host: '35.240.188.91',
+        host: '34.87.185.36',
         port: 3306,
         username: 'root',
         password: 'utician1234',

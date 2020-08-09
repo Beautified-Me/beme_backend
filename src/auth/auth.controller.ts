@@ -121,7 +121,9 @@ export class AuthController {
         try {
             let result = await query.query(`INSERT INTO auth(userName,email,password,email_activate_id) VALUES('${userName}', '${userEmail}', '${encryptPassword}','${randomInt}')`)
 
-            const urlApi = `http://35.240.205.140:3000/auth/activate?id=${result['insertId']}&activateId=${randomInt}`
+            //const urlApi = `http://35.240.205.140:3000/auth/activate?id=${result['insertId']}&activateId=${randomInt}`
+            const urlApi = `http://35.187.244.173:3000/auth/activate?id=${result['insertId']}&activateId=${randomInt}`
+
 
             const message = {
                 from: 'testdeveloperarvin@gmail.com', // Sender address
